@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Scoreboard</string>
+    <string name="score">0</string>
+    <string name="sub">-</string>
+    <string name="add">+</string>
+    <string name="reset">reset</string>
+    <string name="player1">player1</string>
+    <string name="_00">00</string>
+    <string name="player2">player2</string>
+    <string name="goal"> Goal :</string>
+    <string name="start">START</string>
+    <string name="NameDigits">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890</string>
+</resources>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#737373"
+    tools:context=".BoardActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:backgroundTint="#1D1D1D"
+        app:cardCornerRadius="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/blue_Reset"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/line"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="#EAAC81"
+                android:text="@string/reset"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <Button
+                android:id="@+id/orange_Reset"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/line"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="#EAAC81"
+                android:text="@string/reset"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/line"
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/goal"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/white" />
+
+            <TextView
+                android:id="@+id/goal"
+                android:layout_width="150dp"
+                android:layout_height="38dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/corner"
+                android:backgroundTint="#737373"
+                android:fontFamily="@font/sport"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:text="Goal:"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:id="@+id/player1_ID"
+                    android:layout_width="200dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/corner"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/sport"
+                    android:gravity="center"
+                    android:text="@string/player1"
+                    android:textColor="@color/black"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/blue_Board"
+                    android:layout_width="210dp"
+                    android:layout_height="170dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/corner"
+                    android:backgroundTint="#206ED6"
+                    android:fontFamily="@font/sport"
+                    android:gravity="center"
+                    android:text="@string/_00"
+                    android:textColor="@color/white"
+                    android:textSize="100sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/add_BlueButton"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignStart="@id/blue_Board"
+                    android:layout_alignParentBottom="true"
+                    android:backgroundTint="#206ED6"
+                    android:gravity="center"
+                    android:text="@string/add"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/sub_BlueButton"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignEnd="@id/blue_Board"
+                    android:layout_alignParentBottom="true"
+                    android:backgroundTint="#206ED6"
+                    android:text="@string/sub"
+                    android:textColor="@color/white"
+                    android:textSize="30sp">
+
+
+                </Button>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="0dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/player2_ID"
+                    android:layout_width="200dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/corner"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/sport"
+                    android:gravity="center"
+                    android:text="@string/player2"
+                    android:textColor="@color/black"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/orange_Board"
+                    android:layout_width="210dp"
+                    android:layout_height="170dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="-3dp"
+                    android:background="@drawable/corner"
+                    android:backgroundTint="#DF7336"
+                    android:fontFamily="@font/sport"
+                    android:gravity="center"
+                    android:text="@string/_00"
+                    android:textColor="@color/white"
+                    android:textSize="100sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/add_OrangeButton"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignStart="@id/orange_Board"
+                    android:layout_alignParentBottom="true"
+                    android:backgroundTint="#DF7336"
+                    android:gravity="center"
+                    android:text="@string/add"
+                    android:textColor="@color/white"
+                    android:textSize="30sp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/sub_OrangeButton"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignEnd="@id/orange_Board"
+                    android:layout_alignParentBottom="true"
+                    android:backgroundTint="#DF7336"
+                    android:text="@string/sub"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
